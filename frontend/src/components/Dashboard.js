@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Route, Router, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import Auth from '../_helpers/Auth';
 import Client from '../_helpers/Client';
 import { ProtectedRoute } from '../_helpers/ProtectedRoute';

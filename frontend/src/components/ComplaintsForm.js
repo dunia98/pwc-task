@@ -21,7 +21,7 @@ function ComplaintsForm({match, history, profile, view}){
                 console.log(err)
             })
         }
-    }, [])
+    }, [view, match.params.id])
     function submit(e){
         e.preventDefault()
         setError('');
@@ -74,7 +74,11 @@ function ComplaintsForm({match, history, profile, view}){
             <form className="form-createComplaint pt-5" onSubmit={submit}>
 
                 <h1>{profile.roles.includes('admin') ? 'Update' : 'Create'} Complaints</h1>
-
+                {error && 
+                    <div className="alert alert-danger" role="alert">
+                        {error}
+                    </div>
+                }
                 <label htmlFor="inputTitle" className="sr-only">Title</label>
                 <input 
                     value={title} 

@@ -42,13 +42,13 @@ function Complaints({profile}){
                                     <td>{item.description}</td>
                                     <td>{item.userId}</td>
                                     <td>
-                                        {item.status == 'pending' && 
+                                        {item.status.toString() === 'pending' && 
                                             <span className="badge badge-primary">{item.status}</span>
                                         }
-                                        {item.status == 'resolved' && 
+                                        {item.status.toString() === 'resolved' && 
                                             <span className="badge badge-success">{item.status}</span>
                                         }
-                                        {item.status == 'dismissed' && 
+                                        {item.status.toString() === 'dismissed' && 
                                             <span className="badge badge-danger">{item.status}</span>
                                         }
                                     </td>

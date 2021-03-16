@@ -76,7 +76,7 @@ function Login(){
                 />
                 <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
                 <div className="pt-5">
-                    I don't have an accaount? <Link to="/signup">signup</Link>
+                    I don't have an account? <Link to="/signup">signup</Link>
                 </div>
             </form>
         </div>
